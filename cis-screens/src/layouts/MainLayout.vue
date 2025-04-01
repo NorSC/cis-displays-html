@@ -30,7 +30,7 @@
         </q-responsive>
       </q-carousel-slide>
     </q-carousel>
-    <div class="row q-pa-none" style="position: fixed; bottom: 4%px; left: 2%; width: 96%">
+    <div class="row q-pa-none" style="position: fixed; bottom: 2%; left: 2%; width: 96%">
       <!-- <div class="text-red">{{ thedata }}</div> -->
       <div class="col q-pr-sm" v-for="(item, index) of thedata" :key="index">
         <!-- <div class="text-red">{{ item.progress }}</div> -->
