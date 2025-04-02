@@ -1,8 +1,8 @@
 {
   "name": "cis-screens",
   "version": "0.0.1",
-  "description": "A Quasar Project",
-  "productName": "Quasar App",
+  "description": "CIS Screens",
+  "productName": "CIS Screens",
   "author": "Tom Bartindale <tom@bartindale.com>",
   "type": "module",
   "private": true,
