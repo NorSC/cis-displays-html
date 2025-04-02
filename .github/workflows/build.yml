@@ -42,7 +42,6 @@ jobs:
       - name: Get Data
         env: # Or as an environment variable
           SCREENS_FILE: ${{ secrets.SCREENS_FILE }}
-          FILES_FILE: ${{ secrets.FILES_FILE }}
         run: npm run preprocess
       - name: Build
         run: npm run build
