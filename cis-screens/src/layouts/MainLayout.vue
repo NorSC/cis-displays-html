@@ -108,7 +108,7 @@ export default defineComponent({
       if (!w.IsHighlighted) return w
     })
 
-    console.log(this.thedata)
+    // console.log(this.thedata)
     this.updatedAt = `Updated ${new Date(data.updatedAt).toDateString()}`
 
     for (let i = 0; i < this.thedata.length; i++) {
