@@ -2,7 +2,7 @@
   <div class="fit overflow:hidden">
     <div :class="{ highlightedMain: highlighted }" v-if="highlighted">
       <q-img
-        :src="`/data/${highlighted.filename}`"
+        :src="`./data/${highlighted.filename}`"
         class="fit"
         fit="cover"
         no-transition
@@ -12,7 +12,7 @@
       />
       <q-responsive :ratio="16 / 9" class="fit">
         <video
-          :src="`/data/${highlighted.filename}`"
+          :src="`./data/${highlighted.filename}`"
           muted
           loop
           autoplay
@@ -39,7 +39,7 @@
         >
           <q-responsive :ratio="16 / 9" class="fit">
             <q-img
-              :src="`/data/${item.filename}`"
+              :src="`./data/${item.filename}`"
               class="fit"
               fit="cover"
               no-transition
@@ -50,7 +50,7 @@
 
             <video
               :ref="`video_${index}`"
-              :src="`/data/${item.filename}`"
+              :src="`./data/${item.filename}`"
               muted
               loop
               autoplay
