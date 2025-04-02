@@ -203,7 +203,7 @@ export default defineComponent({
   position: fixed;
   top: 4%;
   left: 1%;
-  width: 55%;
+  width: 50%;
   z-index: 1;
   transform: perspective(1500px) rotateY(20deg);
   box-shadow: 0px 0px 50px 5px rgb(255, 255, 255, 0.2);
@@ -213,7 +213,7 @@ export default defineComponent({
   position: fixed;
   bottom: 5%;
   right: 3%;
-  width: 80%;
+  width: 60%;
   height: auto;
   transform: perspective(1500px) rotateY(-20deg);
   box-shadow: 0px 0px 50px 5px rgb(255, 255, 255, 0.2);
