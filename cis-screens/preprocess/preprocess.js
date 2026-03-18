@@ -30,7 +30,9 @@ for (let item of raw) {
     output.push(item)
     console.log(`"${item.src}?download=1"`)
     execSync(`wget -O ./data/${item.filename} "${item.src}?download=1"`)
-    copyFileSync(`./data/${item.filename}`, `../public/data/${item.filename}`)
+    // copyFileSync(`./data/${item.filename}`, `../public/data/${item.filename}`)
+    execSync(`curl -L --max-time 30 --retry 3 -o ./data/${item.filename} "${item.src}?download=1"`)
+
   }
 }
 // console.log(output)
