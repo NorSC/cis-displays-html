@@ -31,7 +31,8 @@ for (let item of raw) {
     console.log(`"${item.src}?download=1"`)
     execSync(`wget -O ./data/${item.filename} "${item.src}?download=1"`)
     // copyFileSync(`./data/${item.filename}`, `../public/data/${item.filename}`)
-    execSync(`curl -L --max-time 60 --cookie-jar /tmp/sp-cookies.txt --cookie /tmp/sp-cookies.txt -o ./data/${item.filename} "${item.src}?download=1"`)
+    // execSync(`curl -L --max-time 60 --cookie-jar /tmp/sp-cookies.txt --cookie /tmp/sp-cookies.txt -o ./data/${item.filename} "${item.src}?download=1"`)
+    execSync(`wget -O ./data/${item.filename} "${item.src}?download=1"`)
 
   }
 }
